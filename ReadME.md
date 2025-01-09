@@ -8,7 +8,7 @@ Ein Python-basiertes Tool zur Konvertierung von Dateien in Videos und zurück. D
 
 ## Dieses Programm ist aktuell nur unter macOS mit AppleM1/M2 lauffähig.
 
-`Datei2Videoundzurück` ermöglicht:
+`Infinite_Storage_Glitcher` ermöglicht:
 - **Datei in Video konvertieren:** 
   - Dateien werden in ein Schwarz-Weiß-Video umgewandelt.
   - Die Binärdaten der Datei werden in Frames eines Videos gespeichert.
@@ -46,7 +46,7 @@ brew install ffmpeg
 
 ```bash
 git clone https://github.com/username/Datei2Videoundzurueck.git
-cd Datei2Videoundzurueck
+cd Infinite_Storage_Glitcher
 ```
 2.	Programm starten:
 
