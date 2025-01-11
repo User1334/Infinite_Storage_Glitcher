@@ -1,4 +1,4 @@
-# Datei2Videoundzurück
+# Infinite_Storage_Glitcher
 
 Ein Python-basiertes Tool zur Konvertierung von Dateien in Videos und zurück. Dieses Programm nutzt GPU-Beschleunigung und bewahrt Metadaten wie Erstellungs- und Änderungsdatum der Dateien.
 
