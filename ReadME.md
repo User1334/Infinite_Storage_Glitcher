@@ -45,7 +45,7 @@ brew install ffmpeg
 1.	Repository klonen:
 
 ```bash
-git clone https://github.com/username/Datei2Videoundzurueck.git
+git clone https://github.com/user1334/Infinite_Storage_Glitcher.git
 cd Infinite_Storage_Glitcher
 ```
 2.	Programm starten:
