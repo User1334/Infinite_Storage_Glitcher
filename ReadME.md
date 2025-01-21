@@ -1,102 +1,103 @@
 # Infinite_Storage_Glitcher
 
-Ein Python-basiertes Tool zur Konvertierung von Dateien in Videos und zurück. Dieses Programm nutzt GPU-Beschleunigung und bewahrt Metadaten wie Erstellungs- und Änderungsdatum der Dateien.
+A Python-based tool for converting files to videos and back. This program leverages GPU acceleration and preserves metadata such as the creation and modification dates of the files.
 
 ---
 
-## 📜 Beschreibung
+## 📜 Description
 
-## Dieses Programm ist aktuell nur unter macOS mit AppleM1/M2 lauffähig.
+## This program is currently only compatible with macOS on Apple M1/M2.
 
-`Infinite_Storage_Glitcher` ermöglicht:
-- **Datei in Video konvertieren:** 
-  - Dateien werden in ein Schwarz-Weiß-Video umgewandelt.
-  - Die Binärdaten der Datei werden in Frames eines Videos gespeichert.
-  - Metadaten wie Erstellungs- und Änderungsdatum werden im Video eingebettet.
+`Infinite_Storage_Glitcher` enables:
+- **Convert file to video:** 
+  - Files are converted into a black-and-white video.
+  - The binary data of the file is stored in the frames of the video.
+  - Metadata such as creation and modification dates are embedded in the video.
 
-- **Video in Datei rekonstruieren:**
-  - Das Programm liest die Frames aus dem Video aus und rekonstruiert daraus die ursprüngliche Datei.
-  - Metadaten werden aus dem Video extrahiert und auf die Datei angewendet.
+- **Reconstruct file from video:**
+  - The program reads the frames from the video and reconstructs the original file.
+  - Metadata is extracted from the video and applied to the file.
 
 ---
 
-## 🛠️ Abhängigkeiten
+## 🛠️ Dependencies
 
-### **Systemanforderungen**
-- **Python**: Version 3.10 (GPU-Unterstützung erfordert diese Version).
-- **MacOS**: Mit Apple Silicon (M1/M2) für GPU-Beschleunigung.
-- **FFmpeg**: Für Videoverarbeitung erforderlich.
-- **Homebrew**: Paketmanager für macOS
-
-### **Python-Bibliotheken**
-Die erforderlichen Bibliotheken können mit folgendem Befehl installiert werden:
+### **System Requirements**
+- **Python**: Version 3.10 (GPU Support requires this version).
+- **MacOS**: With Apple Silicon (M1/M2) for GPU accleration.
+- **FFmpeg**: Required for video processing.
+- **Homebrew**: Package manager macOS
+  
+---
+Install Homebrew for macOS from [here](https://brew.sh).
+### **Python-Libraries**
+The required libraries can be installed with the following command:
 
 ```bash
 pip install numpy torch tqdm opencv-python
 ```
-Installiere FFmpeg über Homebrew:
+Install FFmpeg via Homebrew:
 ```bash
 brew install ffmpeg
 ```
 
 ---
 
-## 🚀 Installation & Ausführung
-1.	Repository klonen:
+## 🚀 Installation & Execution
+1.	Clone the repository:
 
 ```bash
 git clone https://github.com/user1334/Infinite_Storage_Glitcher.git
 cd Infinite_Storage_Glitcher
 ```
-2.	Programm starten:
+2.	Start the program:
 
 ```bash
 python3 converter.py
 ```
 
-3.	Option auswählen:
-  - 1: Datei in ein Video konvertieren.
-  - 2: Video in eine Datei rekonstruieren.
+3.	Select an option:
+  - 1: Convert file to video.
+  - 2: Reconstruct file from video.
 
-4.	Eingabeaufforderungen folgen:
+4.	Follow the prompts:
 	
-  - Option 1 (Datei → Video):
-  - Eingabe: Pfad zur Datei.
-  - Ausgabe: Pfad zum Zielvideo.
-  - Option 2 (Video → Datei):
-  - Eingabe: Pfad zum Video.
-  - Ausgabe: Pfad zur Zieldatei.
+  - Option 1 (File → Video):
+  - Input: Path/to/file.example.
+  - Output: Path to the target video.
+  - Option 2 (Video → File):
+  - Input: Path/to/file.example.
+  - Output: Path to the target file.
 
-## 📋 Beispiele
+## 📋 Examples
 
-Datei in Video konvertieren:
+Convert file to video:
 
 ```bash
 python3 converter.py
-Gib 1 oder 2 ein: 1
-Gib den Pfad zur gewünschten Datei ein: /Pfad/zur/Datei.txt
-Gib den Pfad zum Ausgabevideo ein (ohne .mov): /Pfad/zum/Video
+Enter 1 or 2: 1
+Enter the path to the desired file: /path/to/file.txt
+Enter the path for the output video (without .mov): /path/to/video
 ```
 
-Video in Datei rekonstruieren:
+Reconstruct file from video:
 
 ```bash
 python3 converter.py
-Gib 1 oder 2 ein: 2
-Gib den Pfad zum Video ein: /Pfad/zum/Video.mov
-Gib den Pfad zur Ausgabedatei ein: /Pfad/zur/rekonstruierten/Datei.txt
+Enter 1 or 2: 2
+Enter the path to the video: /path/to/video.mov
+Enter the path for the output file: /path/to/reconstructed/file.txt
 ```
 
 ## ✨ Features
-  - GPU-Beschleunigung: Nutzung der Metal-API auf macOS für schnelle Verarbeitung.
-  - Metadaten-Speicherung: Erhalt von Erstellungs- und Änderungsdatum zwischen Datei und Video.
-  - Effiziente Verarbeitung: Unterstützt große Dateien mit optimierter Speicherverwaltung.
-  - Fortschrittsanzeige: Zeigt Fortschritt bei der Video- und Dateiverarbeitung.
+  - GPU Acceleration: Utilizes the Metal API on macOS for fast processing.
+  - Metadata Preservation: Maintains creation and modification dates between file and video.
+  - Efficient Processing: Supports large files with optimized memory management.
+  - Progress Indicator: Displays progress during video and file processing.
 
-## 🧪 Zukünftige Verbesserungen
-  - Unterstützung weiterer Plattformen und GPUs.
-  - Verbesserte Geschwindigkeit für die Dateirekonstruktion.
-  - Hinzufügen von Tests zur Validierung der Metadatenübertragung.
+## 🧪 Future Improvements
+  - Support for additional platforms and GPUs.
+  - Support for large files on MacBooks with 8 GB RAM.
 
 
 
